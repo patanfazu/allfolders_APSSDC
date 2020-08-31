@@ -1,0 +1,139 @@
+data.json
+{
+	"profile":{
+		"basics":{
+			"name":"patan",
+			"role":"web dev",
+			"email":"pjhbjh@gmail.com",
+			"address":"atmakuru",
+			"mobile":"87643"
+		},
+		"details":{
+
+		}
+	}
+}
+main.js
+fetch('data.json').then(response=>{
+	return response.json();
+}).then(data=>{
+	//console.log(data.profile.basics);
+	profile(data.profile.basics);
+	details(data.profile.details);
+})
+var child_one=document.querySelector(".child_one");
+var child_two=document.querySelector(".child_two");
+
+var profile=(basic_info)=>{
+	//console.log(basic_info.name);
+	var name=document.createElement("h2");
+	name.textContent=basic_info.name;
+	child_one.append(name);
+	var role=document.createElement("h4");
+	role.textContent=basic_info.role;
+	child_two.append(role);
+	  
+	
+
+	var email=document.createElement("a");
+	email.href="mailto:"+basic_info.email;
+	email.textContent=basic_info.email;
+	child_one.append(email);
+
+	var mobile=document.createElement("a");
+	mobile.href="tel:"+basic_info.mobile;
+	mobile.textContent=basic_info.mobile;
+	child_one.append(mobile);
+ 	
+ 	var add=document.createElement("h2");
+ 	add.textContent=basic_info.address;
+ 	child_two.append(add);
+
+}
+var details=(details_info)=>{
+
+}
+style.css
+*{
+	font-family: sans-serif;
+
+}
+header{
+	background: blue;
+	color: #fff;
+	padding: .12%;
+	box-shadow: 0px 8px 8px -8px #000;
+
+
+}
+.parent{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.child_one{
+	width: 25%;
+	padding: 1%;
+	text-align: center;
+	border: 1px solid #ddd;
+	box-shadow: 0px 8px 8px -8px #000;
+	margin: 1%
+
+
+}
+.child_two{
+	width:65`%;
+	padding: 1%;
+	margin: 1%;
+	border: 1px solid #ddd;
+	box-shadow: 0px 8px 8xp -8px;
+
+
+
+
+}
+
+/*resp*8*/
+@media only screen and (min-width:320px) and (max-width:480px){
+	.child_one,.child_two{
+		width: 95%;
+		background-color: red;
+
+	}
+}
+@media only screen and (min-width:481px ) and (max-width: 780px ){
+	.child_one,.child_two{
+		width: 45%;
+		background: blue;
+		font-size: 18px;
+	}
+}
+
+index.html
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Responsive-->
+	<meta name="viewport" content="width:device-width,initial-scale=1">
+	<title>:resume:</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h2>Resume Builder</h2>
+		
+	</header>
+	<SECTION class="parent">
+		<article class="child_one">
+			
+		</article>
+		<article class="child_two">
+			
+		</article>
+	</SECTION>
+
+</body>
+</html>
+<script src="main.js">
+	</script>

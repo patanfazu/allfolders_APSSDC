@@ -1,0 +1,237 @@
+.jumbotron {
+        /*  background-color: pink !important;*/
+        
+        margin-top: .5%;
+        background-size: cover;
+        background-color: transparent;
+        background-image: url('http://www.extremetech.com/wp-content/uploads/2014/05/apple-laptops-surface-event.jpg');
+        overflow: hidden;
+        min-height: 855px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 25px !important;
+}
+
+.jumbotron h1 {
+        color: white !important;
+        padding-top: 2%;
+        padding-bottom: 2%;
+}
+
+.jumbotron p {
+        color: white;
+}
+
+.nav-pills-spacer {
+        padding-top: .5%;
+}
+
+.adder {
+        padding-top: 5%;
+}
+
+.quote {
+        padding-top: 2%;
+        padding-bottom: .5%;
+}
+
+.glyphicon-twitter {
+        background-image: url('http://static1.squarespace.com/static/5355b272e4b04b5c0a1cfb69/t/55e58ce2e4b09f6b9551e065/1441107171172/Twitter-glyph.png')
+}
+
+.about {
+        margin-top: 5%;
+        min-height: 856px;
+        border-radius: 25px !important;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-size: cover;
+        background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkJRxes_5UPnqjjyBZUvBdHNMLrbNR6hFg4rHwHB92YmMaI84ldA');
+        overflow: hidden;
+}
+
+.about-p {
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-bottom: 3%;
+        height: 40%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 2%;
+}
+
+.image {
+        padding: 1%;
+      margin:1%;
+}
+.image-border {
+    border:solid 2px black;
+    margin-right:1%;
+}
+
+.about-p p {
+        color: black;
+        font-size: 120%;
+        text-align: left;
+      
+}
+
+.column {
+        width: 25%;
+        background-color: #589299;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 25px;
+        height: 70%
+}
+
+.column ul {
+        text-align: left;
+}
+
+.contact {
+        background-size: cover;
+        background-color: transparent;
+        background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyDAxJ4pOxO7vWmT3qtsRXqbaJAlzAOGitcZusdGoY0lVgaq4S9Q');
+        min-height: 855px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 25px !important;
+        margin-top: 2%;
+        width: 100%;
+        overflow: hidden;
+}
+
+.contact-button-div {
+        padding-top: 12%;
+        padding-right: 4%;
+      margin-top:15%;
+        margin-left: 7.2%;
+      margin-right:%;  
+        width: 14% !important;
+
+}
+
+.contact-button-div a:link {
+        text-decoration: none;
+}
+
+.custom {
+        width: 170% !important;
+      white-space:normal !important;
+      word-wrap:break-word;
+      font-size: 96% !important;
+}
+
+.contact-p-div {
+        width: 50%;
+      height: 70%;
+        padding-top: 7%;
+        font-family: Helvetica;
+        font-size: 100%;
+        color: white;
+}
+
+.contact-p-div p {
+        font-family: Helvetica;
+        font-size: 200%;
+        color: white;
+        min-height: 30%;
+}
+
+.contact-p-div a {
+        color: yellow;
+}
+
+.nav-pills {
+        margin-top: .5%;
+        padding-bottom: .5%;
+}
+
+.personal-titles {
+        font-color: white;
+}
+
+.portfolio {
+        min-height: 856px;
+        background-size: cover;
+        background-color: #7EBDC2;
+        margin-bottom: 5%;
+      padding-top:3%;
+        padding-bottom: 10%;
+        border-radius: 25px !important;
+        overflow: hidden;
+}
+
+.portfolio-section {
+        padding-bottom: 3%;
+
+}
+
+.portfolio-section h1 {
+      font-size:500% !important;
+      text-align: center;
+        
+}
+
+.thumbnail-row {
+    margin-left: 4%; 
+}
+
+.thumbnail-custom {
+        border-radius: 15px !important;
+        width: 100%;
+        white-space: normal !important;
+        word-wrap: break-word;
+}
+
+.thumbnail-custom h4{
+    font-size:95%;
+}
+
+.pretty-square {
+        min-height: 200px;
+        color: #F2A4C8;
+        margin-top: 1%;
+        margin-right: 1%;
+        margin-left: 1%;
+}
+.portfolio-images {
+    height:13em !important;
+}
+    
+.pretty-row {
+        min-height:10px;
+}
+
+.spacer-row {
+        min-height: 15px;
+}
+
+.footer {
+        position: relative;
+        /*  margin-top: -150px; negative value of footer height */
+        
+        min-height: 15px;
+        clear: both;
+}
+
+.intro-header {
+        min-height: 855px;
+        padding-top: 2%;
+        /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+        
+        padding-bottom: 2%;
+        text-align: center;
+        background-size: cover;
+        background-image: url(http://www.extremetech.com/wp-content/uploads/2014/05/apple-laptops-surface-event.jpg);
+        /* url('/Users/valerierickert/Documents/Portfolio Files/bluebonnetfields2015.jpg'); */
+        
+        overflow: hidden;
+}
+
+body {
+        overflow: auto;
+        padding-bottom: 1%;
+        font-size: 100%;
+}

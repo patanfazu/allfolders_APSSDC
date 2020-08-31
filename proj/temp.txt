@@ -1,0 +1,458 @@
+day 1
+import React from 'react';
+
+
+class Welcome extends React.Component{
+	render(){
+		return(
+			<div className="main"><h1>Class Compoinent</h1>
+			<h5>classcomponent</h5>
+			</div>
+
+
+			);
+	}
+
+}
+
+export default Welcome;
+App.js
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Welcome from './Welcome';
+
+function App() {
+  return (
+    <article><h1>welcomeee</h1>
+    <Welcome/>
+    </article>
+    
+  );
+}
+
+export default App;
+day 2
+import React from 'react';
+
+
+class Welcome extends React.Component{
+	render(){
+		return(
+			<div className="main"><h1>Class Compoinent</h1>
+			<h5>classcomponent</h5>
+			</div>
+
+
+			);
+	}
+
+}
+
+export default Welcome;
+app.js
+import React,{Component} from 'react';
+import './App.css';
+import Sample from'./Sample';
+
+class App extends Component{
+	render(){
+		return(
+			<div className="App"><h2>Hello</h2><App1><Sample></Sample></App1></div>
+
+
+			)
+	}
+}
+let App1=()=>{
+	return <h2>App1 component</h2>
+}
+export default App;
+day 3
+import React,{Component} from 'react';
+import './App.css';
+import Sample from'./Sample';
+import StatesInFunction from'./StatesInFunction';
+class App extends Component{
+	constructor(props){
+		super();
+		this.state={
+			name:"fazu"
+		}
+
+
+	}
+    changeStateVa=()=>{
+		this.setState({
+			name:"patan"
+		})
+	}
+	changes=()=>{
+		this.setState({
+			name:"fazu"
+		})
+	}
+
+	render(){
+		return(
+			<div className="App"><h2 onMouseOver={this.changeStateVa} onMouseLeave={this.changes}>{this.state.name}</h2><App1></App1><Sample/><StatesInFunction/></div>
+
+
+			)
+	}
+}
+let App1=()=>{
+	return <h2>App1 component</h2>
+}
+
+export default App;
+TaassssssKKKKKKKKK
+App.js:
+import React from 'react';
+import './App.css';
+import data from './data.json';
+import profileIcon from './facebook.svg';
+import womanIcon from './github.svg';
+import Resume from './Resume';
+import {BrowserRouter,Route,Link} from 'react-router-dom';
+
+let App=()=>{
+  
+  return(
+    <div>
+      <header> <h2> Resume building </h2> </header>
+
+      <BrowserRouter>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/resume" component={Resume}/>
+      </BrowserRouter>
+    </div>
+  )
+}
+let Home=()=>{
+  let profiles=data.profiles;
+  return(
+    <section className="parent">
+          {profiles.map((value,index)=>(
+            <article className="child" key={index}>
+            {value.basics.gender==="male" ? <img src={profileIcon} alt="Profile icon"/> : <img src={womanIcon} alt="Woman icon"/>}
+            <br />
+              <h3 className="name"> {value.basics.name} </h3>
+              <h4> {value.basics.role} </h4> <hr />
+          <a href={"mailto:"+value.basics.email} className="link">  {value.basics.email} </a>
+          <a href={"tel:"+value.basics.mobile} className="link">  {value.basics.mobile} </a>
+          <p> {value.basics.address}</p>
+            <Link to={{pathname:"/resume", data:{id:index}}} className="button"> View profile </Link>
+            </article>
+          ))}
+      </section>
+  )
+}
+
+export default App;
+App.css:
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+header{
+  background-color: #555a81;
+  color: #fff;
+  padding: .5%;
+}
+.parent{
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2%;
+ 
+}
+.child{
+  background-color: #fff;
+  width: 20%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  box-shadow: 0px 8px 8px -8px #555a81;
+}
+.child img{
+width: 50%;
+border-radius: 50%;
+border: 1px solid #e7e8f3;
+}
+.child.name{
+  color: #555a81;
+}
+.link{
+  text-decoration: none;
+  display: block;
+  color: #555a81;
+
+}
+.button{
+  background: #555a81;
+  color: #fff;
+  display: block;
+  padding: 1%;
+  margin: 1%;
+}
+.basicsCard{
+  color: #fff;
+  text-align: center;
+  width: 235;
+  margin: 1%;
+  padding: 1%;
+  background-color: #555a81;
+  box-shadow: 12px 12px 16px 0 rgba(0,0,0,0.25),
+  -6px -6px 10px 0 rgba(255,255,2);
+  border-radius: 50px;
+
+}
+.contentCard{
+  width: 69%;
+  margin: 1%;
+  padding: 2%;
+  background-color: #555a81;
+  box-shadow: 12px 12px 16px 0 rgba(0,0,0,0.25),
+  -6px -6px 10px 0 rgba(255,255,2);
+  border-radius: 50px;
+
+}
+.table{
+  width: 96%;
+ 
+ 
+}
+.skills{
+	margin: 1%;
+	padding: 1%;
+	border-radius: 10px;
+	box-shadow: 0px 8px 8px -8px #000;
+	background: #349DCB;
+}
+Resume.js:
+import React from 'react'
+import {profiles} from './data.json';
+import './App.css';
+
+let Resume=(props)=>{
+	var info=profiles[props.location.data.id];
+	return(
+		<section className="parent">
+		<article className="basicsCard">
+			<h2>{info.basics.name}</h2>
+			<h4>{info.basics.role}</h4>
+			<a href={"mailto:"+info.basics.email} className="link1">{info.basics.email}</a>
+		</article>
+		<article className="contentCard">
+		<h2> Summary</h2> <hr/>
+		<ul>
+		{info.summary.map((summaryValue,summaryIndex)=>(
+			<li key={summaryIndex}>{summaryValue}</li>
+
+
+			))}
+		</ul>
+		<h2> Educational Qualifications</h2> <hr />
+		<div>
+		<table border="1" className="table">
+		<thead>
+		
+		<tr>
+			<th>Degree</th>
+			<th>Percentage</th>
+			<th>Year</th>
+		</tr>
+		</thead>
+		<tbody>
+			{info.education.map((educationValue,educationIndex)=>(
+				<tr>
+				<td>{educationValue.degree}</td>
+				<td>{educationValue.percentage}</td>
+				<td>{educationValue.year}</td>
+			</tr>
+
+			))}
+			
+		</tbody>
+		
+		</table>
+		</div>
+		<h2>Skills</h2> <hr/>
+		<div> 
+			{info.skills.map((skillsValue,skilsIndex)=>(
+				<ul>
+					<h3>{skillsValue.type}</h3>
+					{skillsValue.values.map((skillsValuevalues,skillsValueIndex)=>(
+						<span className="skills">{skillsValuevalues}</span>
+
+					))}
+					
+				
+				</ul>
+				
+
+			))}
+		</div>
+
+		</article>
+
+		</section>
+		)
+
+}
+export default Resume;
+data.json:
+ {
+    "profiles": [{
+            "basics": {
+                "name": "Kalyan Chakravarthi P",
+                "role": "MERN Developer",
+                "email": "kalyanchakravarthi.p@apssdc.in",
+                "mobile": "+91 9603487813",
+                "Address": "Amaravathi, Guntur"
+            },
+            "summary": [
+                "Completed graduation in stream of CSE . I'm alumns of SRM university",
+                "Having Knowledge on Web Designing and Web Development. Did a project on those",
+                "Having Knowledge on front end technologies such as HTML, CSS, JavaScript",
+                "Worked on front end libraries like bootstra, and used libraries like react"
+
+
+            ],
+            "skills": [{
+                    "type": "programmiong languages",
+                    "values": ["C", "C++", "Java"]
+                },
+                {
+                    "type": "Web technologies",
+                    "values": ["html5", "csss", "javascript", "nodeJS"]
+
+                },
+                {
+                    "type": "frame works",
+                    "values": ["Bootstrap", "reactjs"]
+                },
+                {
+                    "type": "Databases",
+                    "values": ["oracle", "mysql", "sqlite", "mongo"]
+                }
+
+
+
+            ],
+            "education": [{
+                    "degree": "Computer science & Engineering SRM AP",
+                    "percentage": "75%",
+                    "year": "2021"
+
+                },
+                {
+                    "degree": "Intermediate (M.P.C) narayana colege",
+                    "percentage": "85%",
+                    "year": "2018"
+                    
+
+                },
+                {
+                    "degree": "SSC sri chaitanya school",
+                    "percentage": "95%",
+                    "year": "2016"
+                    
+                }
+            ]
+        },
+        {
+            "basics": {
+                "name": "Bhavya Lakshmi M",
+                "role": "MEAN Developer",
+                "email": "bhavyalakshmi.m@apssdc.in",
+                "mobile": "+91 9888786858",
+                "Address": "Vijayawada, Krishna"
+            },
+            "summary": [
+                "Completed graduation in stream of CSE and alumni of SRM university ",
+                "Having Knowledge on Web Designing and Web Development. Did a project on those",
+                "Having Knowledge on front end technologies such as HTML, CSS, JavaScript",
+                "Worked on front end libraries like bootstra, and used libraries like react"
+            ],
+            "skills": [{
+                    "type": "programmiong languages",
+                    "values": ["C", "C++", "Java"]
+                },
+                {
+                    "type": "Web technologies",
+                    "values": ["html5", "csss", "javascript", "nodeJS"]
+
+                },
+                {
+                    "type": "frame works",
+                    "values": ["Bootstrap", "reactjs"]
+                },
+                {
+                    "type": "Databases",
+                    "values": ["oracle", "mysql", "sqlite", "mongo"]
+                }
+
+
+
+            ],
+            "education": [{
+                    "degree": "Computer science & Engineering",
+                    "institute": "SRM AP",
+                    "percentage": "75%"
+
+                },
+                {
+                    "degree": "Intermediate (M.P.C)",
+                    "institute": "Narayana",
+                    "percentage": "85%"
+
+                },
+                {
+                    "degree": "SSC",
+                    "institute": "sri chaitanya school",
+                    "percentage": "95%"
+                }
+            ]
+        }
+    ]
+ }
+
+

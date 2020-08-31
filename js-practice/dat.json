@@ -1,0 +1,64 @@
+{
+	"profile": {
+		"basics": {
+			"name": "Patan Fazulullah",
+			"role": "Web Developer",
+			"email": "patanfazu@gmail.com",
+			"address": "Atmakuru",
+			"mobile": "9492358838"
+		},
+		"details": {
+			"summary": [
+				"Completed bachelors degree in the breanch of cse",
+				"having k`nowledge on front end technolofgies like html5,css",
+				"and baxkend technologies like ",
+				"Completed bachelors degree in the breanch of cse",
+				"having knowledge on front end technolofgies like html5,css",
+				"and baxkend technologies like ",
+				"Completed bachelors degree in the breanch of cse",
+				"having knowledge on front end technolofgies like html5,css",
+				"and baxkend technologies like "
+			],
+			"education": [{
+					"degree": "Computer science & Engineering",
+					"institute": "SRM AP",
+					"percentage": "75%"
+
+				},
+				{
+					"degree": "Intermediate (M.P.C)",
+					"institute": "Narayana",
+					"percentage": "85%"
+
+				},
+				{
+					"degree": "SSC",
+					"institute": "sri chaitanya school",
+					"percentage": "95%"
+				}
+			],
+			"skills": [{
+					"type": "programmiong languages",
+					"values": ["C", "C++", "Java"]
+				},
+				{
+					"type": "Web technologies",
+					"values": ["html5", "csss", "javascript", "nodeJS"]
+
+				},
+				{
+					"type": "frame works",
+					"values": ["Bootstrap", "reactjs"]
+				},
+				{
+					"type": "Databases",
+					"values": ["oracle", "mysql", "sqlite", "mongo"]
+				}
+
+
+
+			]
+
+		}
+	}
+}

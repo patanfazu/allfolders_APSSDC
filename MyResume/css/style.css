@@ -1,0 +1,44 @@
+.parent{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.child
+{
+	width: 28%;
+	border: 2px dotted #ddd;
+	padding: 2%;
+	margin: 2%;
+	text-align: center;
+	box-shadow: 0px 8px 8px 8px #000;
+	border-radius: 10%;
+}
+.profile
+{
+	width: 200px;
+	border: 1px solid #ddd;
+	padding: 2%;
+	margin: 2%;
+	box-shadow: 0px 8px 8px 8px #000;
+	border-radius:70%;
+}
+.contact
+
+{
+	width: 60px;
+	
+
+}
+.body{
+	background-image: url('MyResume/image/4.jfif');
+}
+
+.about{
+	width: 95px;
+	height: 35px;
+}
+.des{
+	float: right;
+	color: red;
+}

@@ -1,0 +1,79 @@
+var http=require('http');
+var fs=require('fs');
+var url=require('url');
+http.createServer((request,response)=>{
+    response.writeHead(200,{'Content.type':'text/plain'});
+    
+    var host=url.parse(request.url,true);
+    var path="."+host.pathname;
+    if(path=='./about.html'){
+    	fs.readFile(path,null,(err,info)=>{
+    		response.writeHead(200,{'Content-Type':'text/html'})
+    		response.end(info);
+
+    	})
+    }
+    else{
+    
+    fs.readFile('./index.html',null,(error,data)=>{
+    	if(error){
+    		response.writeHead(404);
+    		response.write("File not found");
+    	}
+    	else
+    	{
+    		response.write(data);
+    	}
+    	response.end();
+    })
+   
+}}).listen(8081);
+
+console.log('Server is running at 8081');
+54bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+var http=require('http');
+var fs=require('fs');
+var url=require('url');
+
+http.createServer((request,response)=>{
+ response.writeHead(200,{'Content-Type':'text/html'});
+ var host=url.parse(request.url,true);
+ var path="."+host.pathname;
+ if(path=='./'){
+  fs.readFile('./index.html',null,(error,data)=>{
+  if(error){
+   response.writeHead(404);
+   response.write("File not found");
+  } else {
+   response.write(data);
+  }
+  response.end();
+ })
+} else {
+  fs.readFile(path,null,(err,info)=>{
+   response.writeHead(200,{'Content-Type':'text/html'});
+   response.end(info)
+  })
+}
+}).listen(8081);
+
+console.log('Server is running at http://localhost:8081');
+main.js//////////////////
+var mysql=require('mysql');
+var connection=mysql.createConnection({
+  host:"localhost",
+  user:"root",
+  password:"",
+  database:"node_info"
+})
+connection.connect(error=>{
+  if (error) throw error;
+  console.log("Connected successfully");
+  
+      connection.query("create table emp (name varchar(20),emailid varchar(20),mobile varchar(20))",(err1,res1)=>{
+      if (err1) throw(err1);
+      console.log("table created");
+    })
+  })
+  
+  

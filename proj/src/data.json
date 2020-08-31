@@ -1,0 +1,115 @@
+ {
+    "profiles": [{
+            "basics": {
+                "name": "Kalyan Chakravarthi P",
+                "role": "MERN Developer",
+                "email": "kalyanchakravarthi.p@apssdc.in",
+                "mobile": "+91 9603487813",
+                "Address": "Amaravathi, Guntur"
+            },
+            "summary": [
+                "Completed graduation in stream of CSE . I'm alumns of SRM university",
+                "Having Knowledge on Web Designing and Web Development. Did a project on those",
+                "Having Knowledge on front end technologies such as HTML, CSS, JavaScript",
+                "Worked on front end libraries like bootstra, and used libraries like react"
+
+
+            ],
+            "skills": [{
+                    "type": "programmiong languages",
+                    "values": ["C", "C++", "Java"]
+                },
+                {
+                    "type": "Web technologies",
+                    "values": ["html5", "csss", "javascript", "nodeJS"]
+
+                },
+                {
+                    "type": "frame works",
+                    "values": ["Bootstrap", "reactjs"]
+                },
+                {
+                    "type": "Databases",
+                    "values": ["oracle", "mysql", "sqlite", "mongo"]
+                }
+
+
+
+            ],
+            "education": [{
+                    "degree": "Computer science & Engineering SRM AP",
+                    "percentage": "75%",
+                    "year": "2021"
+
+                },
+                {
+                    "degree": "Intermediate (M.P.C) narayana colege",
+                    "percentage": "85%",
+                    "year": "2018"
+                    
+
+                },
+                {
+                    "degree": "SSC sri chaitanya school",
+                    "percentage": "95%",
+                    "year": "2016"
+                    
+                }
+            ]
+        },
+        {
+            "basics": {
+                "name": "Bhavya Lakshmi M",
+                "role": "MEAN Developer",
+                "email": "bhavyalakshmi.m@apssdc.in",
+                "mobile": "+91 9888786858",
+                "Address": "Vijayawada, Krishna"
+            },
+            "summary": [
+                "Completed graduation in stream of CSE and alumni of SRM university ",
+                "Having Knowledge on Web Designing and Web Development. Did a project on those",
+                "Having Knowledge on front end technologies such as HTML, CSS, JavaScript",
+                "Worked on front end libraries like bootstra, and used libraries like react"
+            ],
+            "skills": [{
+                    "type": "programmiong languages",
+                    "values": ["C", "C++", "Java"]
+                },
+                {
+                    "type": "Web technologies",
+                    "values": ["html5", "csss", "javascript", "nodeJS"]
+
+                },
+                {
+                    "type": "frame works",
+                    "values": ["Bootstrap", "reactjs"]
+                },
+                {
+                    "type": "Databases",
+                    "values": ["oracle", "mysql", "sqlite", "mongo"]
+                }
+
+
+
+            ],
+            "education": [{
+                    "degree": "Computer science & Engineering",
+                    "institute": "SRM AP",
+                    "percentage": "75%"
+
+                },
+                {
+                    "degree": "Intermediate (M.P.C)",
+                    "institute": "Narayana",
+                    "percentage": "85%"
+
+                },
+                {
+                    "degree": "SSC",
+                    "institute": "sri chaitanya school",
+                    "percentage": "95%"
+                }
+            ]
+        }
+    ]
+ }

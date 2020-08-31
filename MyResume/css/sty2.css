@@ -1,0 +1,43 @@
+.main{
+	
+	padding: 2%;
+	height: 300px;
+	background: #CDE834;
+	border: 4px solid #ddd;
+	border-radius: 5%;
+
+}
+.image{
+	padding: 2%;
+	width: 90%;
+	height: 500px;
+}
+.child1{
+	width: 20%;
+	float: left;
+	padding: 2%;
+	height: 250px;
+	background: #9E817C;
+	border: 4px solid #ddd;
+	border-radius: 8%;
+}
+.child2{
+	width: 80%;
+	float: left;
+	padding: 3%;
+	height: 250px;
+	background: #DC5E48;
+	border: 4px solid #ddd;
+	border-radius: 4%;
+
+}
+.list{
+	font-family: cursive;
+	font-size: 23px;
+}
+.child3{
+	background: #F4100D;
+	border: 4px solid #ddd;
+	border-radius: 4%;
+
+}
